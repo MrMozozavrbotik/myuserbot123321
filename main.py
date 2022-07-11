@@ -172,7 +172,7 @@ async def _(client: Client, message: Message):
     await edit_or_reply(message, reply_text)
 
 @app.on_message(filters.command('eval', prefixes=".") & filters.me)
-async def eval_expression(client, message):
+def eval_expression(client, message):
     expression = " ".join(message.command[1:])
 
     if expression:
@@ -181,20 +181,20 @@ async def eval_expression(client, message):
         try:
             result = eval(expression)
         except Exception as error:
-            await client.edit_message_text(
+            client.edit_message_text(
                 m.chat.id,
                 m.message_id,
                 ERROR.format(expression, error)
             )
         else:
             if result is None:
-                await client.edit_message_text(
+                client.edit_message_text(
                     m.chat.id,
                     m.message_id,
                     SUCCESS.format(expression)
                 )
             else:
-                await client.edit_message_text(
+                client.edit_message_text(
                     m.chat.id,
                     m.message_id,
                     RESULT.format(expression, result)
