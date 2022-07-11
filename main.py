@@ -8,7 +8,7 @@ import random
 from datetime import datetime
 from pyrogram.raw import functions
 from basic import edit_or_reply
-import random
+
 import asyncio
 from pyrogram.errors import PeerIdInvalid
 
