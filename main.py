@@ -146,9 +146,9 @@ async def flip(_, msg):
         await msg.edit(text)
 
 @app.on_message(filters.command(["s", "screenshot"], prefixes="."))
-async def take_a_screenshot(app, message):
+def take_a_screenshot(app, message):
     message.delete()
-    await app.send(
+    app.send(
         functions.messages.SendScreenshotNotification(
             peer=app.resolve_peer(message.chat.id),
             reply_to_msg_id=0,
