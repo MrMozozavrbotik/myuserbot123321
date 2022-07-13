@@ -1,5 +1,5 @@
 pyrogram==1.4.12
 tgcrypto==1.2.3
-speedtest
+speedtest-cli==2.1.3
 pyshorteners==1.0.1
 countryinfo==0.1.2
