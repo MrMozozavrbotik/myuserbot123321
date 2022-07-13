@@ -1,7 +1,5 @@
 pyrogram==1.4.12
-tgcrypto
-string
+tgcrypto==1.2.3
 speedtest
-uuid
-pyshorteners
-countryinfo
+pyshorteners==1.0.1
+countryinfo==0.1.2
