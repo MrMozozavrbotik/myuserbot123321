@@ -9,6 +9,7 @@ import random
 import calendar
 import string
 import speedtest
+from speedtest import Speedtest
 import pyshorteners
 from datetime import date, datetime
 from pyrogram.raw import functions
@@ -83,7 +84,7 @@ async def password_cmd(_, message):
 
 
 def speed_test():
-    tester = speedtest.Speedtest()
+    tester = Speedtest()
     tester.get_best_server()
     tester.download()
     tester.upload()
