@@ -1,7 +1,6 @@
 pyrogram==1.4.12
 tgcrypto
 asyncio
-secrets
 string
 speedtest
 uuid
