@@ -1,0 +1,11 @@
+pyrogram==1.4.12
+tgcrypto
+asyncio
+datetime
+secrets
+string
+speedtest
+uuid
+calendar
+pyshorteners
+countryinfo
