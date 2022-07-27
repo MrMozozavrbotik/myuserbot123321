@@ -5,3 +5,4 @@ pyshorteners==1.0.1
 countryinfo==0.1.2
 httpx==0.13.3
 requests==2.26.0
+Pillow==9.2.0
